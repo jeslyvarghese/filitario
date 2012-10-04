@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8E83A27161D703500FBA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A26161D703500FBA234 /* UIKit.framework */; };
+		D8E83A29161D703500FBA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A28161D703500FBA234 /* Foundation.framework */; };
+		D8E83A2B161D703500FBA234 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A2A161D703500FBA234 /* CoreGraphics.framework */; };
+		D8E83A31161D703500FBA234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E83A2F161D703500FBA234 /* InfoPlist.strings */; };
+		D8E83A33161D703500FBA234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E83A32161D703500FBA234 /* main.m */; };
+		D8E83A37161D703500FBA234 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E83A36161D703500FBA234 /* SLAppDelegate.m */; };
+		D8E83A3F161D707600FBA234 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E83A3E161D707600FBA234 /* Filters.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8E83A22161D703500FBA234 /* filitario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = filitario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E83A26161D703500FBA234 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8E83A28161D703500FBA234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8E83A2A161D703500FBA234 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8E83A2E161D703500FBA234 /* filitario-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "filitario-Info.plist"; sourceTree = "<group>"; };
+		D8E83A30161D703500FBA234 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8E83A32161D703500FBA234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8E83A34161D703500FBA234 /* filitario-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "filitario-Prefix.pch"; sourceTree = "<group>"; };
+		D8E83A35161D703500FBA234 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		D8E83A36161D703500FBA234 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		D8E83A3D161D707600FBA234 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filters.h; path = filitario/lib/filters/Filters.h; sourceTree = "<group>"; };
+		D8E83A3E161D707600FBA234 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Filters.m; path = filitario/lib/filters/Filters.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8E83A1F161D703500FBA234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E83A27161D703500FBA234 /* UIKit.framework in Frameworks */,
+				D8E83A29161D703500FBA234 /* Foundation.framework in Frameworks */,
+				D8E83A2B161D703500FBA234 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8E83A17161D703500FBA234 = {
+			isa = PBXGroup;
+			children = (
+				D8E83A41161D708200FBA234 /* filters */,
+				D8E83A2C161D703500FBA234 /* filitario */,
+				D8E83A25161D703500FBA234 /* Frameworks */,
+				D8E83A23161D703500FBA234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8E83A23161D703500FBA234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83A22161D703500FBA234 /* filitario.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8E83A25161D703500FBA234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83A26161D703500FBA234 /* UIKit.framework */,
+				D8E83A28161D703500FBA234 /* Foundation.framework */,
+				D8E83A2A161D703500FBA234 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E83A2C161D703500FBA234 /* filitario */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83A35161D703500FBA234 /* SLAppDelegate.h */,
+				D8E83A36161D703500FBA234 /* SLAppDelegate.m */,
+				D8E83A2D161D703500FBA234 /* Supporting Files */,
+			);
+			path = filitario;
+			sourceTree = "<group>";
+		};
+		D8E83A2D161D703500FBA234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83A2E161D703500FBA234 /* filitario-Info.plist */,
+				D8E83A2F161D703500FBA234 /* InfoPlist.strings */,
+				D8E83A32161D703500FBA234 /* main.m */,
+				D8E83A34161D703500FBA234 /* filitario-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8E83A41161D708200FBA234 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				D8E83A3D161D707600FBA234 /* Filters.h */,
+				D8E83A3E161D707600FBA234 /* Filters.m */,
+			);
+			name = filters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8E83A21161D703500FBA234 /* filitario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E83A3A161D703500FBA234 /* Build configuration list for PBXNativeTarget "filitario" */;
+			buildPhases = (
+				D8E83A1E161D703500FBA234 /* Sources */,
+				D8E83A1F161D703500FBA234 /* Frameworks */,
+				D8E83A20161D703500FBA234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = filitario;
+			productName = filitario;
+			productReference = D8E83A22161D703500FBA234 /* filitario.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8E83A19161D703500FBA234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D8E83A1C161D703500FBA234 /* Build configuration list for PBXProject "filitario" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8E83A17161D703500FBA234;
+			productRefGroup = D8E83A23161D703500FBA234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E83A21161D703500FBA234 /* filitario */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8E83A20161D703500FBA234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E83A31161D703500FBA234 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8E83A1E161D703500FBA234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E83A33161D703500FBA234 /* main.m in Sources */,
+				D8E83A37161D703500FBA234 /* SLAppDelegate.m in Sources */,
+				D8E83A3F161D707600FBA234 /* Filters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8E83A2F161D703500FBA234 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E83A30161D703500FBA234 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8E83A38161D703500FBA234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8E83A39161D703500FBA234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8E83A3B161D703500FBA234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "filitario/filitario-Prefix.pch";
+				INFOPLIST_FILE = "filitario/filitario-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8E83A3C161D703500FBA234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "filitario/filitario-Prefix.pch";
+				INFOPLIST_FILE = "filitario/filitario-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8E83A1C161D703500FBA234 /* Build configuration list for PBXProject "filitario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E83A38161D703500FBA234 /* Debug */,
+				D8E83A39161D703500FBA234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E83A3A161D703500FBA234 /* Build configuration list for PBXNativeTarget "filitario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E83A3B161D703500FBA234 /* Debug */,
+				D8E83A3C161D703500FBA234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8E83A19161D703500FBA234 /* Project object */;
+}
