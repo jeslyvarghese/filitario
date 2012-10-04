@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Filters.h"
 
 @interface PreviewPane : UIViewController
+
+@property(nonatomic,retain)Filters *customFilter;
+
+@property (retain, nonatomic) IBOutlet UIImageView *myImageViewOutlet;
+
+@property (retain, nonatomic) IBOutlet UIScrollView *myScrollView;
+- (IBAction)warmifyAction:(id)sender;
+- (IBAction)nostolgiaAction:(id)sender;
 
 @end
