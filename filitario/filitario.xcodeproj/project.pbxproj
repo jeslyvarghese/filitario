@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		849D67F4161D9DC400D2E9F6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849D67F3161D9DC400D2E9F6 /* CoreImage.framework */; };
-		849D6803161DA0D500D2E9F6 /* colors.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D6802161DA0D500D2E9F6 /* colors.png */; };
 		849D6805161DA0F200D2E9F6 /* grads.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 849D6804161DA0F200D2E9F6 /* grads.jpeg */; };
-		849D680B161DA88200D2E9F6 /* laugh.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D680A161DA88200D2E9F6 /* laugh.png */; };
+		849D6811161DACC600D2E9F6 /* people.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 849D6810161DACC600D2E9F6 /* people.jpeg */; };
+		849D6814161DAD0100D2E9F6 /* laugh.png in Resources */ = {isa = PBXBuildFile; fileRef = 849D6813161DAD0100D2E9F6 /* laugh.png */; };
 		84AEE01E161D90D2003C7102 /* PreviewPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEE01C161D90D2003C7102 /* PreviewPane.m */; };
 		84AEE01F161D90D2003C7102 /* PreviewPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AEE01D161D90D2003C7102 /* PreviewPane.xib */; };
 		D8E83A27161D703500FBA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A26161D703500FBA234 /* UIKit.framework */; };
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		849D67F3161D9DC400D2E9F6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		849D6802161DA0D500D2E9F6 /* colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colors.png; path = ../../colors.png; sourceTree = "<group>"; };
 		849D6804161DA0F200D2E9F6 /* grads.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grads.jpeg; path = ../../grads.jpeg; sourceTree = "<group>"; };
-		849D680A161DA88200D2E9F6 /* laugh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laugh.png; path = ../../laugh.png; sourceTree = "<group>"; };
+		849D6810161DACC600D2E9F6 /* people.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people.jpeg; sourceTree = "<group>"; };
+		849D6813161DAD0100D2E9F6 /* laugh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laugh.png; sourceTree = "<group>"; };
 		84AEE01B161D90D2003C7102 /* PreviewPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewPane.h; sourceTree = "<group>"; };
 		84AEE01C161D90D2003C7102 /* PreviewPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewPane.m; sourceTree = "<group>"; };
 		84AEE01D161D90D2003C7102 /* PreviewPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewPane.xib; sourceTree = "<group>"; };
@@ -112,9 +112,9 @@
 		D8E83A41161D708200FBA234 /* filters */ = {
 			isa = PBXGroup;
 			children = (
-				849D680A161DA88200D2E9F6 /* laugh.png */,
+				849D6810161DACC600D2E9F6 /* people.jpeg */,
+				849D6813161DAD0100D2E9F6 /* laugh.png */,
 				849D6804161DA0F200D2E9F6 /* grads.jpeg */,
-				849D6802161DA0D500D2E9F6 /* colors.png */,
 				D8E83A3D161D707600FBA234 /* Filters.h */,
 				D8E83A3E161D707600FBA234 /* Filters.m */,
 				84AEE01B161D90D2003C7102 /* PreviewPane.h */,
@@ -176,9 +176,9 @@
 			files = (
 				D8E83A31161D703500FBA234 /* InfoPlist.strings in Resources */,
 				84AEE01F161D90D2003C7102 /* PreviewPane.xib in Resources */,
-				849D6803161DA0D500D2E9F6 /* colors.png in Resources */,
 				849D6805161DA0F200D2E9F6 /* grads.jpeg in Resources */,
-				849D680B161DA88200D2E9F6 /* laugh.png in Resources */,
+				849D6811161DACC600D2E9F6 /* people.jpeg in Resources */,
+				849D6814161DAD0100D2E9F6 /* laugh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
