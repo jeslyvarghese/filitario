@@ -63,15 +63,51 @@
 }
 -(CGImageRef) vintage   :(CIImage*)image
 {
+    //Apply a hue effect, luminosity and sepia
     
+    CIImage     *originalImage      = image;
+    CIFilter    *hueAdjustFilter    = [CIFilter filterWithName:@"CIHueAdjust"];
+    
+    [hueAdjustFilter setValue:originalImage forKey:kCIInputImageKey];
+    [hueAdjustFilter setValue:[NSNumber numberWithFloat:0.5] forKey:@"inputAngle"];
+    
+    CIImage     *hueAdjustFilterOutput  =   [hueAdjustFilter valueForKey:kCIOutputImageKey];
+    
+    CIFilter    *sepiaFilter        = [CIFilter filterWithName:@"CISepiaTone"];
+    
+    [sepiaFilter setValue:hueAdjustFilterOutput forKey:kCIInputImageKey];
+    [sepiaFilter setValue:[NSNumber numberWithFloat:.75] forKey:@"inputAngle"];
+    
+    CIImage     *sepiaFilterOutput  = [sepiaFilter valueForKey:kCIOutputImageKey];
+    
+    CIFilter    *exposureAdjustFilter   = [CIFilter filterWithName:@"CIExposureAdjust"];
+    
+    [exposureAdjustFilter setValue:sepiaFilterOutput forKey:kCIInputImageKey];
+    [exposureAdjustFilter setValue:[NSNumber numberWithFloat:0.45] forKey:@"inputEV"];
+    
+    CIImage     *outputImage = [exposureAdjustFilter valueForKey:kCIOutputImageKey];
+    
+    return [filterContext createCGImage:outputImage fromRect:[outputImage extent]];
+
 }
 -(CGImageRef) vignette  :(CIImage*)image
 {
+    //Apply Vignette effect on it
+    CIImage     *originalImage      = image;
+    CIFilter    *vignetteFilter     = [CIFilter filterWithName:@"CIVignette"];
+    
+    [vignetteFilter setValue:originalImage forKey:kCIInputImageKey];
+    [vignetteFilter setValue:[NSNumber numberWithFloat:.5] forKey:@"inputRadius"];
+    [vignetteFilter setValue:[NSNumber numberWithFloat:.75] forKey:@"inputIntensity"];
+    
+    CIImage     *outputImage = [vignetteFilter valueForKey:kCIOutputImageKey];
+    
+    return [filterContext createCGImage:outputImage fromRect:[outputImage extent]];
     
 }
 -(CGImageRef) clear     :(CIImage*)image
 {
-    
+    return NULL;
 }
 
 @end
