@@ -62,7 +62,6 @@
 		D8E83A17161D703500FBA234 = {
 			isa = PBXGroup;
 			children = (
-				849D67F3161D9DC400D2E9F6 /* CoreImage.framework */,
 				D8E83A41161D708200FBA234 /* filters */,
 				D8E83A2C161D703500FBA234 /* filitario */,
 				D8E83A25161D703500FBA234 /* Frameworks */,
@@ -81,6 +80,7 @@
 		D8E83A25161D703500FBA234 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				849D67F3161D9DC400D2E9F6 /* CoreImage.framework */,
 				D8E83A26161D703500FBA234 /* UIKit.framework */,
 				D8E83A28161D703500FBA234 /* Foundation.framework */,
 				D8E83A2A161D703500FBA234 /* CoreGraphics.framework */,
@@ -259,6 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filitario/filitario-Prefix.pch";
 				INFOPLIST_FILE = "filitario/filitario-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -270,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filitario/filitario-Prefix.pch";
 				INFOPLIST_FILE = "filitario/filitario-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
