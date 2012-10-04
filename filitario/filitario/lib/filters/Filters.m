@@ -67,12 +67,10 @@
     
     CIImage     *originalImage      = image;
     CIFilter    *hueAdjustFilter    = [CIFilter filterWithName:@"CIHueAdjust"];
-    
     [hueAdjustFilter setValue:originalImage forKey:kCIInputImageKey];
     [hueAdjustFilter setValue:[NSNumber numberWithFloat:0.5] forKey:@"inputAngle"];
     
     CIImage     *hueAdjustFilterOutput  =   [hueAdjustFilter valueForKey:kCIOutputImageKey];
-    
     CIFilter    *sepiaFilter        = [CIFilter filterWithName:@"CISepiaTone"];
     
     [sepiaFilter setValue:hueAdjustFilterOutput forKey:kCIInputImageKey];
