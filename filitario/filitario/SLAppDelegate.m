@@ -7,14 +7,16 @@
 //
 
 #import "SLAppDelegate.h"
-
+#import "PreviewPane.h"
 @implementation SLAppDelegate
 
 @synthesize window = _window;
+@synthesize myViewController=_myViewController;
 
 - (void)dealloc
 {
     [_window release];
+    [_myViewController release];
     [super dealloc];
 }
 
@@ -22,6 +24,8 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    self.myViewController=[[PreviewPane alloc]initWithNibName:@"PreviewPane" bundle:nil];
+    self.window.rootViewController=self.myViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
