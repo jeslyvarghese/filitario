@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84AEE01E161D90D2003C7102 /* PreviewPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEE01C161D90D2003C7102 /* PreviewPane.m */; };
+		84AEE01F161D90D2003C7102 /* PreviewPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AEE01D161D90D2003C7102 /* PreviewPane.xib */; };
 		D8E83A27161D703500FBA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A26161D703500FBA234 /* UIKit.framework */; };
 		D8E83A29161D703500FBA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A28161D703500FBA234 /* Foundation.framework */; };
 		D8E83A2B161D703500FBA234 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E83A2A161D703500FBA234 /* CoreGraphics.framework */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84AEE01B161D90D2003C7102 /* PreviewPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewPane.h; sourceTree = "<group>"; };
+		84AEE01C161D90D2003C7102 /* PreviewPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewPane.m; sourceTree = "<group>"; };
+		84AEE01D161D90D2003C7102 /* PreviewPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewPane.xib; sourceTree = "<group>"; };
 		D8E83A22161D703500FBA234 /* filitario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = filitario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E83A26161D703500FBA234 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8E83A28161D703500FBA234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +104,9 @@
 			children = (
 				D8E83A3D161D707600FBA234 /* Filters.h */,
 				D8E83A3E161D707600FBA234 /* Filters.m */,
+				84AEE01B161D90D2003C7102 /* PreviewPane.h */,
+				84AEE01C161D90D2003C7102 /* PreviewPane.m */,
+				84AEE01D161D90D2003C7102 /* PreviewPane.xib */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E83A31161D703500FBA234 /* InfoPlist.strings in Resources */,
+				84AEE01F161D90D2003C7102 /* PreviewPane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 				D8E83A33161D703500FBA234 /* main.m in Sources */,
 				D8E83A37161D703500FBA234 /* SLAppDelegate.m in Sources */,
 				D8E83A3F161D707600FBA234 /* Filters.m in Sources */,
+				84AEE01E161D90D2003C7102 /* PreviewPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +278,7 @@
 				D8E83A3C161D703500FBA234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
