@@ -15,6 +15,7 @@
 {
     [super init];
     filterContext = [CIContext contextWithOptions:nil];
+    return self;
 }
 -(CIContext*) context
 {
@@ -23,6 +24,7 @@
 
 -(CGImageRef) warmify   :(CIImage*)image
 {
+    CIContext *context=[CIContext contextWithOptions:nil];
     CIImage     *orginalImage       = image;
     CIFilter    *temperatureFilter  = [CIFilter filterWithName:@"CITemperatureAndTint"];
     
@@ -31,20 +33,21 @@
     [temperatureFilter setValue:[CIVector vectorWithX:2500 Y:600] forKey:@"inputTargetNeutral"];
     
     CIImage     *outputImage  = [temperatureFilter valueForKey:kCIOutputImageKey];
+   // NSLog(@"%@",filterContext);
+    CGImageRef result=[context createCGImage:outputImage fromRect:[outputImage extent] ];
     
-    return [filterContext createCGImage:outputImage fromRect:[outputImage extent] ];
-    
+    return result;
 }
 -(CGImageRef) nostalgia :(CIImage*)image
 {
     //Apply a monochrome filter to turn to greyscale and then a sepia filter over it
-    
+     CIContext *context=[CIContext contextWithOptions:nil];
     CIImage     *orginalImage       =   image;
     CIFilter    *monochromeFilter   =   [CIFilter filterWithName:@"CIColorMonochrome"];
     
     [monochromeFilter setValue:orginalImage forKey:kCIInputImageKey];
-    [monochromeFilter setValue:[CIColor colorWithRed:.3 green:.3 blue:.3 ]forKey:@"inputColor"];
-    [monochromeFilter setValue:[NSNumber numberWithFloat:.65] forKey:@"inputIntensity"];
+    [monochromeFilter setValue:[CIColor colorWithRed:.1 green:.1 blue:.1 ]forKey:@"inputColor"];
+    [monochromeFilter setValue:[NSNumber numberWithFloat:.85] forKey:@"inputIntensity"];
     
     CIImage    *monochromeFilterOutputImage = [monochromeFilter valueForKey:kCIOutputImageKey];
     
@@ -55,7 +58,7 @@
     
     CIImage    *outputImage        = [sepiaFilter valueForKey:kCIOutputImageKey];
     
-    return [filterContext createCGImage:outputImage fromRect:[outputImage extent]];
+    return [context createCGImage:outputImage fromRect:[outputImage extent]];
     
 }
 -(CGImageRef) vintage   :(CIImage*)image
@@ -106,4 +109,5 @@
 {
     return NULL;
 }
+
 @end
